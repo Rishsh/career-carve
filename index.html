@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCarve - Homescreen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 375px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            min-height: 600px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2563EB, #1D4ED8);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .welcome {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid #2563EB;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1f2937;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .action-btn {
+            background: white;
+            border: 2px solid #e5e7eb;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #374151;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .action-btn:hover {
+            border-color: #2563EB;
+            color: #2563EB;
+            transform: translateY(-2px);
+        }
+
+        .trending-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 3px solid #10b981;
+        }
+
+        .trending-title {
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+
+        .trending-desc {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .tool-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #374151;
+            transition: all 0.2s;
+        }
+
+        .tool-item:hover {
+            background: #2563EB;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .resource-link {
+            display: block;
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #374151;
+            margin-bottom: 8px;
+            transition: all 0.2s;
+        }
+
+        .resource-link:hover {
+            background: #2563EB;
+            color: white;
+        }
+
+        .networking-item {
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #374151;
+            display: block;
+            margin-bottom: 8px;
+            transition: all 0.2s;
+        }
+
+        .networking-item:hover {
+            background: #10b981;
+            color: white;
+        }
+
+        .footer {
+            background: #f3f4f6;
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .footer a {
+            color: #6b7280;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s;
+        }
+
+        .footer a:hover {
+            color: #2563EB;
+        }
+
+        .coming-soon {
+            background: #f59e0b;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="welcome">👋 Welcome Back, Rishav!</div>
+            <div class="subtitle">Your personalized CareerCarve dashboard</div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Quick Actions -->
+            <div class="section">
+                <div class="section-title">🎯 Quick Actions</div>
+                <div class="quick-actions">
+                    <a href="#" class="action-btn">📅 Upcoming Sessions</a>
+                    <a href="#" class="action-btn">🎥 Watch Recordings</a>
+                </div>
+            </div>
+
+            <!-- Trending Today -->
+            <div class="section">
+                <div class="section-title">🔥 Trending Today</div>
+                <div class="trending-item">
+                    <div class="trending-title">💼 Top Consulting Case Prep Workshop</div>
+                    <div class="trending-desc">Join live today at 7 PM with Industry Experts.</div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-title">🎤 Mock GD: Strategy Roles</div>
+                    <div class="trending-desc">Sharpen your group discussion skills with peers.</div>
+                </div>
+                <a href="#" class="action-btn">✨ View All Trending</a>
+            </div>
+
+            <!-- Career Tools -->
+            <div class="section">
+                <div class="section-title">🧑‍💼 Your Career Tools</div>
+                <div class="tools-grid">
+                    <a href="#" class="tool-item">
+                        <div>📝</div>
+                        <div style="font-size: 12px;">Resume Review</div>
+                    </a>
+                    <a href="#" class="tool-item">
+                        <div>🗂</div>
+                        <div style="font-size: 12px;">Job Tracker</div>
+                    </a>
+                    <a href="#" class="tool-item">
+                        <div>💬</div>
+                        <div style="font-size: 12px;">1:1 Mentorship</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Career Resources -->
+            <div class="section">
+                <div class="section-title">📰 Career Resources</div>
+                <a href="#" class="resource-link">📚 Industry Reports</a>
+                <a href="#" class="resource-link">🎯 Placement Prep Guide</a>
+            </div>
+
+            <!-- Networking Hub -->
+            <div class="section">
+                <div class="section-title">🤝 Networking Hub</div>
+                <a href="#" class="networking-item">👥 Join Peer Groups</a>
+                <a href="#" class="networking-item">🏆 Leaderboard</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="#">🔔 Notifications</a>
+            <a href="#">⚙️ Settings</a>
+        </div>
+    </div>
+
+    <script>
+        // Add click handlers for interactive elements
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.textContent.includes('Coming Soon')) {
+                    alert('🚧 This feature is coming soon!');
+                } else {
+                    alert('🎯 Feature clicked: ' + this.textContent.trim());
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
